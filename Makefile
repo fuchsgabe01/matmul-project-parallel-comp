@@ -35,6 +35,7 @@ matmul-veclib: $(OBJS) dgemm_veclib.o
 # --
 # Rules to build object files
 
+# Custom rule for dgemm_mine.c
 matmul.o: matmul.c
 	$(CC) -c $(CFLAGS) $(CPPFLAGS) $<
 
